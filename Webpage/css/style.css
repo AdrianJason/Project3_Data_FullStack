@@ -3,19 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-#particles-js {
+#canvas1{
+    position: absolute;
+    top: 0; left:0;
     width: 100%;
-    height: 100vh;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-        url("Webpage/pics/theflumicro.jpg");
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-}
+    height: 100%;
 
+}
 
 .center-text {
     position: absolute;
@@ -28,16 +22,9 @@ h1 {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100px;
+    /* -webkit-text-stroke: 2px seagreen; */
 }
 
-
-.center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 h1 {
     color: white;
@@ -46,6 +33,10 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+h1:hover {
+    color:seagreen;
+    font-weight: bolder;
 }
 
 
@@ -86,6 +77,17 @@ a {
 }
 
 a:hover {
-    color:white;
-    text-decoration: underline;
+    color:seagreen;
+    font-weight: bolder;
+    /* text-decoration: underline; */
+}
+
+/* a:hover {
+	background: rgba(0,0,0,0);
+	color: teal;
+    font-weight: bolder;
+} */
+img {
+    background-image: url(Webpage/pics/colorflu.jpg);
+    filter: brightness(0.55);
 }
