@@ -1,5 +1,6 @@
+
 body {
-    background-image: url("../pics/bwflu2.jpeg");
+    background-image: url("../../Webpage/pics/theflumicro.jpg");
     background-size: cover;
 
 }
@@ -7,7 +8,7 @@ h1 {
     text-align: center;
     font-family: arial black;
     font-weight: bold;
-    color: maroon;
+    color: teal;
     /* background-color: rgba(255, 255, 255, 0.4); */
     font-size: 50pt;
     padding: 1px; 
@@ -17,7 +18,7 @@ h1 {
   .text-container {
     width: 100%;
     margin: auto;
-    background-color: rgba(253, 55, 55, 0.4);
+    background-color: rgba(9, 138, 145, 0.75);
     text-align: left;
     padding: 2px;
     padding-top: 1%;
@@ -38,8 +39,7 @@ h1 {
       justify-content: center;
   }
   .home-button {
-      background-color: black;
-      font-weight: bolder;
+      background-color: teal;
       color: white;
       padding: 10px 20px;
       text-decoration: none;

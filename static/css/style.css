@@ -88,6 +88,6 @@ a:hover {
     font-weight: bolder;
 } */
 img {
-    background-image: url(Webpage/pics/colorflu.jpg);
+    background-image: url(../pics/colorflu.jpg);
     filter: brightness(0.55);
 }
