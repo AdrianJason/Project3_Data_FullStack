@@ -33,11 +33,11 @@ fetch('http://127.0.0.1:5000/flu')
                 datasets: [{
                     label: 'Symptomatic Illnesses (Estimate)',
                     data: ySymptomatic,
-                    backgroundColor: 'orange'
+                    backgroundColor: 'lightcoral'
                 }, {
                     label: 'Hospitalizations (Estimate)',
                     data: yHospitalizations,
-                    backgroundColor: 'red'
+                    backgroundColor: 'crimson'
                 }, {
                     label: 'Deaths (Estimate)',
                     data: yDeaths,
@@ -55,7 +55,7 @@ fetch('http://127.0.0.1:5000/flu')
                 },
                 legend: {
                     display: true,
-                    position: 'right'
+                    position: 'top'
                 }
             }
         });

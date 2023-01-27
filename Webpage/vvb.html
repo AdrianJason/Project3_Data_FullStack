@@ -6,13 +6,33 @@
     <link rel="stylesheet" type="text/css" href="../static/css/vvb-style.css">
   </head>
        <body>
+        <div class="nav">
+          <input type="checkbox" id="nav-check">
+          <div class="nav-header">
+            <div class="nav-title">
+              CDC Flu Data
+            </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          
+          <div class="nav-links">
+            <a href="../index.html" target=>HOME</a>
+            <i>|</i>
+            <a href="FluVaccine.html" target=>VACCINE DATA</a>
+            <i>|</i>
+            <a href="FluBurden.html" target=>FLU BURDEN DATA</a>
+          </div>
+        </div>
             <h1>FLU VACCINE vs FLU BURDEN</h1>
-                <div class="home-button-container">
-                    <a href="../index.html" class="home-button">HOME</a>
-                </div>
-                        <br>
+
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit molestie risus, ut commodo ipsum. </p>
+                    <p>Flu seasons are unpredictable in a number of ways, including when they begin, how severe they are, how long they last, which viruses will spread, and whether the viruses in the vaccine match flu viruses that are circulating.</p>
                 </div>
                 <canvas id="myChart"></canvas>        
                 </div>
