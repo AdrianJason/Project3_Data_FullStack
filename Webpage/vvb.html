@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<head>
+  <head>
     <title>FLU VACCINE vs FLU BURDEN</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/vvb-style.css">
-  </head>
-       <body>
-        <div class="nav">
-          <input type="checkbox" id="nav-check">
-          <div class="nav-header">
-            <div class="nav-title">
-              CDC Flu Data
-            </div>
-          </div>
-          <div class="nav-btn">
-            <label for="nav-check">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          </div>
-          
-          <div class="nav-links">
-            <a href="../index.html" target=>HOME</a>
-            <i>|</i>
-            <a href="FluVaccine.html" target=>VACCINE DATA</a>
-            <i>|</i>
-            <a href="FluBurden.html" target=>FLU BURDEN DATA</a>
-          </div>
-        </div>
-            <h1>FLU VACCINE vs FLU BURDEN</h1>
 
-                <div class="text-container">
-                    <p>Flu seasons are unpredictable in a number of ways, including when they begin, how severe they are, how long they last, which viruses will spread, and whether the viruses in the vaccine match flu viruses that are circulating.</p>
-                </div>
-                <canvas id="myChart"></canvas>        
-                </div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-                <script src="../static/js/vvbchart.js"></script> 
-        </body>
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/vvb-style.css">
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          CDC Flu Data
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="../index.html" target=>HOME</a>
+        <i>|</i>
+        <a href="FluVaccine.html" target=>VACCINE DATA</a>
+        <i>|</i>
+        <a href="FluBurden.html" target=>FLU BURDEN DATA</a>
+      </div>
+    </div>
+        <h1>FLU VACCINE vs FLU BURDEN</h1>
+
+            <div class="text-container">
+                <p>Flu seasons are unpredictable in a number of ways, including when they begin, how severe they are, how long they last, which viruses will spread, and whether the viruses in the vaccine match flu viruses that are circulating.</p>
+            </div>
+            <canvas id="myChart"></canvas>        
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+            <script src="../static/js/vvbchart.js"></script> 
+  </body>
 </html>
