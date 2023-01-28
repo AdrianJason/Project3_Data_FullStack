@@ -7,6 +7,8 @@ fetch("http://127.0.0.1:5000/flu")
         let symIllnesses = [];
         let years = [];
         data.forEach(function(data) {
+            //let groupYear = _.groupBy(data,'year')
+            //console.log(groupYear)
             symIllnesses.push(data["Symptomatic Illnesses (Estimate)"]);
             years.push(data["Year"]);
         });
@@ -26,7 +28,7 @@ fetch("http://127.0.0.1:5000/flu")
                     data: {
                         labels: years,
                         datasets: [{
-                            label: 'Symptomatic Illnesses Estimate',
+                            label: 'Symptomatic Illnesses Estimate (per 100,000)',
                             data: symIllnesses,
                             backgroundColor: 'rgba(32,178,170,0.75)',
                             borderColor: 'rgba(32,178,170, 1)',
@@ -50,7 +52,7 @@ fetch("http://127.0.0.1:5000/flu")
                                 ticks: {
                                     beginAtZero: true,
                                     callback: function(value, index, values) {
-                                        return value + " (x 10^5)"
+                                        return value
                                     },
                                     fontColor: 'rgba(32,178,170, 1)',
                                 }

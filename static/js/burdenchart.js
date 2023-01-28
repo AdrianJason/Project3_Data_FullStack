@@ -38,7 +38,7 @@ fetch('http://127.0.0.1:5000/flu')
                     yAxes: [{
                         ticks: {
                             callback: function (value) {
-                                return value + " Million"
+                                return value
                             },
                             stacked: true
                         }

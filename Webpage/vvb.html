@@ -2,17 +2,21 @@
 <html lang="en">
   
   <head>
-    <title>FLU VACCINE vs FLU BURDEN</title>
+    <title>FLU: VACCINE vs BURDEN</title>
 
-    <!-- CSS-->
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../static/css/vvb-style.css">
 
-    <!-- Boostrap Stylesheet -->
+    <!-- Boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Charts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
 
   <body>
+    <!-- Start of navbar -->
     <div class="nav">
       <input type="checkbox" id="nav-check">
       <div class="nav-header">
@@ -29,21 +33,29 @@
       </div>
       
       <div class="nav-links">
-        <a href="../index.html" target=>HOME</a>
+        <a href="vvb.html" target=>HOME</a>
         <i>|</i>
         <a href="FluVaccine.html" target=>VACCINE DATA</a>
         <i>|</i>
         <a href="FluBurden.html" target=>FLU BURDEN DATA</a>
       </div>
     </div>
-        <h1>FLU VACCINE vs FLU BURDEN</h1>
+    <!-- End of navbar -->
 
-            <div class="text-container">
-                <p>Flu seasons are unpredictable in a number of ways, including when they begin, how severe they are, how long they last, which viruses will spread, and whether the viruses in the vaccine match flu viruses that are circulating.</p>
-            </div>
-            <canvas id="myChart"></canvas>        
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-            <script src="../static/js/vvbchart.js"></script> 
+    <!-- Start of container -->
+    <br><div class = "container">
+      <div class = "row"></div>
+        <div class = "col-md-14"<br>
+          <h1 class="display-4">THE FLU: <br> </h1>
+          <h1 class="display-8">VACCINE VS BURDEN</h1>
+          <br><div class="jumbotron" style="background-color: #ffffff; opacity: 90%;">
+            <p class="lead">Flu seasons are unpredictable in a number of ways, including when they begin, how severe they are, how long they last, which viruses will spread, and whether the viruses in the vaccine match flu viruses that are circulating.</p>
+            <p>Vaccine vs Burden</p>
+            <canvas id="myChart"></canvas>
+              <script src="../static/js/vvbchart.js"></script> 
+          </div>
+      </div>
+    </div>
   </body>
+
 </html>
