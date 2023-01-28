@@ -26,7 +26,7 @@ fetch("http://127.0.0.1:5000/flu")
                     data: {
                         labels: years,
                         datasets: [{
-                            label: 'Symptomatic Illnesses Estimate (*in Hundred Thousands)',
+                            label: 'Symptomatic Illnesses Estimate',
                             data: symIllnesses,
                             backgroundColor: 'rgba(32,178,170,0.75)',
                             borderColor: 'rgba(32,178,170, 1)',
@@ -50,7 +50,7 @@ fetch("http://127.0.0.1:5000/flu")
                                 ticks: {
                                     beginAtZero: true,
                                     callback: function(value, index, values) {
-                                        return value + " HT*"
+                                        return value + " (x 10^5)"
                                     },
                                     fontColor: 'rgba(32,178,170, 1)',
                                 }
@@ -73,7 +73,12 @@ fetch("http://127.0.0.1:5000/flu")
                                     if (label) {
                                         label += ': ';
                                     }
-                                    label += Math.round(tooltipItem.yLabel * 100000).toLocaleString();
+                                    var dataset = data.datasets[tooltipItem.datasetIndex];
+                                    if (dataset.type === 'line') {
+                                        label += tooltipItem.yLabel;
+                                    } else {
+                                        label += Math.round(tooltipItem.yLabel * 100000).toLocaleString();
+                                    }
                                     return label;
                                 }
                             }

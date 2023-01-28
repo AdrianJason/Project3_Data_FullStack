@@ -48,7 +48,7 @@ h1 {
   #myChart {
     /* width: 600px;
     height: 400px; */
-    background-color: whitesmoke;
+    background-color: rgba(240,255,255, 0.8);
     overflow: hidden;
      }
 /* start of navbar */
