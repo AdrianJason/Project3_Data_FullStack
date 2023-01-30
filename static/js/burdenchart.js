@@ -22,15 +22,15 @@ fetch('http://127.0.0.1:5000/flu')
                 datasets: [{
                     label: 'Symptomatic Illnesses Estimate',
                     data: ySymptomatic,
-                    backgroundColor: 'lightcoral'
+                    backgroundColor: 'teal'
                 }, {
                     label: 'Hospitalizations Estimate',
                     data: yHospitalizations,
-                    backgroundColor: 'crimson'
+                    backgroundColor: 'lightseagreen'
                 }, {
                     label: 'Death Estimate',
                     data: yDeaths,
-                    backgroundColor: 'maroon'
+                    backgroundColor: 'mediumturquoise'
                 }]
             },
             options: {
@@ -55,7 +55,7 @@ fetch('http://127.0.0.1:5000/flu')
                             if (label) {
                                 label += ': ';
                             }
-                            label += tooltipItem.yLabel.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                            label += new Intl.NumberFormat().format(tooltipItem.yLabel * 1000000);
                             return label;
                         }
                     }
