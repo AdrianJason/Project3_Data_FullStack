@@ -12,7 +12,7 @@ fetch('http://127.0.0.1:5000/vaccine')
         data: {
             labels: chartLabels,
             datasets: [{
-                label: 'Total Doses Distributed',
+                label: 'Total Doses Distributed (per million)',
                 data: chartData,
                 backgroundColor: 'rgba(0,128,128, .2)',
                 borderColor: 'rgba(0,128,128, 1)',
